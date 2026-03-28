@@ -25,6 +25,7 @@ class Solution{
             }
             else if(Character.isLetterOrDigit(str.charAt(i))){
                 res.append(str.charAt(i));
+                
             }
             else if(str.charAt(i) == '('){
                 st.push(str.charAt(i));
@@ -36,12 +37,15 @@ class Solution{
                 st.pop();
             }
             else{
+                
                 while(!st.empty() && prec(str.charAt(i))<= prec(st.peek())){
                     res.append(st.pop());
                 }
                 st.push(str.charAt(i));
+               
             }
             i++;
+            System.out.println(i);
         }
         while(!st.empty()){
             res.append(st.pop());
