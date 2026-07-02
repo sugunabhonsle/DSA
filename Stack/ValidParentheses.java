@@ -16,6 +16,10 @@ import java.util.Stack;
 // Output: true
 
 class Solution {
+
+    static String nextsmallerelements(int[] arr) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
     public boolean isValid(String s) {
         Stack<Character> st = new Stack<>();
         for(char c : s.toCharArray()){
