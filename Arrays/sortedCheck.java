@@ -19,7 +19,7 @@ public class sortedCheck{
             // Calculate the size of the array
             int n = arr.length;
     
-            // Find the second smallest and second largest elements
+           
             boolean sorted = Solution.schecked(arr, n);
     
             // Output the results
